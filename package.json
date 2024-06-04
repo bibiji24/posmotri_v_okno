@@ -1,0 +1,21 @@
+{
+  "name": "posmotri_v_okno",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "npx prettier --check './**/*.{html,css,js}'",
+    "format": "npx prettier --write './**/*.{html,css,js}'",
+    "lint": "npx stylelint **/*.css",
+    "lintfix": "npx stylelint **/*.css --fix",
+    "checkall": "npm run check && npm run lint",
+    "fixall": "npm run format && npm run lintfix"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "prettier": "^3.3.0",
+    "stylelint": "^16.6.1"
+  }
+}
