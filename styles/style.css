@@ -39,8 +39,11 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
-  block-size: 800px;
+  /*inline-size: 100%;*/
+  min-block-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -68,13 +71,9 @@ ol {
 }
 
 .content {
-  padding-block-start: 133px;
-  padding-inline-end: 30px;
-  padding-block-end: 133px;
-  padding-inline-start: 30px;
   display: grid;
-  grid-template-columns: 1fr 403px;
-  grid-template-rows: auto;
+  grid-template-columns: 711px 403px;
+  grid-template-rows: 534px;
   column-gap: 26px;
 }
 
@@ -201,7 +200,7 @@ ol {
 }
 
 .content__list {
-  padding-inline-start: 2px;
+  padding: 2px;
   block-size: 298px;
   position: relative;
   display: flex;
@@ -210,12 +209,11 @@ ol {
   list-style-type: none;
   overflow-y: auto;
   overflow-x: hidden;
-  scrollbar-width: thin;
+  scrollbar-width: none;
 }
 
 .content__card-link {
   display: block;
-  margin: 2px;
   text-decoration: none;
   cursor: pointer;
   outline-color: transparent;
@@ -274,8 +272,7 @@ ol {
 }
 
 .more-button {
-  inline-size: calc(100% - 3px);
-  margin-block-end: 2px;
+  inline-size: 100%;
 }
 
 .visually-hidden {
