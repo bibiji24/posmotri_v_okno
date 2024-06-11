@@ -206,6 +206,7 @@ ol {
 }
 
 .content__list {
+  inline-size: 416px;
   block-size: 298px;
   position: relative;
   list-style-type: none;
@@ -251,6 +252,7 @@ ol {
 .content__video-card {
   display: flex;
   justify-content: space-between;
+  max-inline-size: 399px;
 }
 
 .content__video-card-description-container {
@@ -288,7 +290,7 @@ ol {
 }
 
 .more-button {
-  inline-size: calc(100% - 4px);
+  inline-size: 395px;
   margin-inline-start: 2px;
   margin-block-end: 2px;
 }
